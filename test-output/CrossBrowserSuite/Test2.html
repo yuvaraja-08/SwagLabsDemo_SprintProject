@@ -1,0 +1,779 @@
+<html>
+<head>
+<title>TestNG:  Test2</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test2</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>95/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Oct 10 11:04:19 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>605 seconds (605511 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='ecomSwaglabsHamburgerMenu.Hamberger_TestCase.verifyResetAppStateBoundaryStates()'><b>verifyResetAppStateBoundaryStates</b><br>Test class: ecomSwaglabsHamburgerMenu.Hamberger_TestCase</td>
+<td></td>
+<td>0</td>
+<td>ecomSwaglabsHamburgerMenu.Hamberger_TestCase@37271612</td></tr>
+<tr>
+<td title='ecomSwaglabsLogin.Login_TestCase.invalidLoginTest()'><b>invalidLoginTest</b><br>Test class: ecomSwaglabsLogin.Login_TestCase<br>Parameters: standard_user, wrong_password</td>
+<td></td>
+<td>2</td>
+<td>ecomSwaglabsLogin.Login_TestCase@6aaceffd</td></tr>
+<tr>
+<td title='ecomSwaglabsHamburgerMenu.Hamberger_TestCase.verifyResetAppStateRemovesProduct()'><b>verifyResetAppStateRemovesProduct</b><br>Test class: ecomSwaglabsHamburgerMenu.Hamberger_TestCase</td>
+<td></td>
+<td>3</td>
+<td>ecomSwaglabsHamburgerMenu.Hamberger_TestCase@37271612</td></tr>
+<tr>
+<td title='ecomSwaglabsLogin.Login_TestCase.verifyLoginNavigatesToProductPage()'><b>verifyLoginNavigatesToProductPage</b><br>Test class: ecomSwaglabsLogin.Login_TestCase<br>Parameters: visual_user, secret_sauce</td>
+<td></td>
+<td>2</td>
+<td>ecomSwaglabsLogin.Login_TestCase@6aaceffd</td></tr>
+<tr>
+<td title='ecomSwaglabsLogin.Login_TestCase.loginRegressionTest()'><b>loginRegressionTest</b><br>Test class: ecomSwaglabsLogin.Login_TestCase<br>Parameters: standard_user, secret_sauce</td>
+<td></td>
+<td>2</td>
+<td>ecomSwaglabsLogin.Login_TestCase@6aaceffd</td></tr>
+<tr>
+<td title='ecomSwaglabsCheckout.Checkout_TestCase.verifyCheckoutOverview()'><b>verifyCheckoutOverview</b><br>Test class: ecomSwaglabsCheckout.Checkout_TestCase<br>Parameters: Bugs, Bunny, 560005</td>
+<td></td>
+<td>2</td>
+<td>ecomSwaglabsCheckout.Checkout_TestCase@3af9c5b7</td></tr>
+<tr>
+<td title='ecomSwaglabsCheckout.Checkout_TestCase.verifyCompleteToHome()'><b>verifyCompleteToHome</b><br>Test class: ecomSwaglabsCheckout.Checkout_TestCase<br>Parameters: Bugs, Bunny, 560005</td>
+<td></td>
+<td>2</td>
+<td>ecomSwaglabsCheckout.Checkout_TestCase@3af9c5b7</td></tr>
+<tr>
+<td title='ecomSwaglabsLogin.Login_TestCase.verifyLoginNavigatesToProductPage()'><b>verifyLoginNavigatesToProductPage</b><br>Test class: ecomSwaglabsLogin.Login_TestCase<br>Parameters: problem_user, secret_sauce</td>
+<td></td>
+<td>2</td>
+<td>ecomSwaglabsLogin.Login_TestCase@6aaceffd</td></tr>
+<tr>
+<td title='ecomSwaglabsCart.Cart_TestCase.verifyCartToCheckout()'><b>verifyCartToCheckout</b><br>Test class: ecomSwaglabsCart.Cart_TestCase<br/>
+<a href="#Output-1559046119" onClick='toggleBox("Output-1559046119", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1559046119" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1559046119">
+TC-CART-03 Passed - Checkout page opened<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecomSwaglabsCart.Cart_TestCase@10aa41f2</td></tr>
+<tr>
+<td title='ecomSwaglabsCheckout.Checkout_TestCase.verifyInvalidPostalCode()'><b>verifyInvalidPostalCode</b><br>Test class: ecomSwaglabsCheckout.Checkout_TestCase<br>Parameters: Bugs, Bunny, </td>
+<td></td>
+<td>0</td>
+<td>ecomSwaglabsCheckout.Checkout_TestCase@3af9c5b7</td></tr>
+<tr>
+<td title='ecomSwaglabsLogin.Login_TestCase.verifyLoginNavigatesToProductPage()'><b>verifyLoginNavigatesToProductPage</b><br>Test class: ecomSwaglabsLogin.Login_TestCase<br>Parameters: standard_user, secret_sauce</td>
+<td></td>
+<td>2</td>
+<td>ecomSwaglabsLogin.Login_TestCase@6aaceffd</td></tr>
+<tr>
+<td title='ecomSwaglabsproducts.Product_TestCase.productPageSmokeTest()'><b>productPageSmokeTest</b><br>Test class: ecomSwaglabsproducts.Product_TestCase<br>Parameters: Sauce Labs Bike Light<br/>
+<a href="#Output-1298445039" onClick='toggleBox("Output-1298445039", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1298445039" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1298445039">
+Product Page smoke test passed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecomSwaglabsproducts.Product_TestCase@c86b9e3</td></tr>
+<tr>
+<td title='ecomSwaglabsLogin.Login_TestCase.loginSmokeTest()'><b>loginSmokeTest</b><br>Test class: ecomSwaglabsLogin.Login_TestCase<br>Parameters: standard_user, secret_sauce</td>
+<td></td>
+<td>2</td>
+<td>ecomSwaglabsLogin.Login_TestCase@6aaceffd</td></tr>
+<tr>
+<td title='ecomSwaglabsLogin.Login_TestCase.validLoginTest()'><b>validLoginTest</b><br>Test class: ecomSwaglabsLogin.Login_TestCase<br>Parameters: standard_user, secret_sauce</td>
+<td></td>
+<td>2</td>
+<td>ecomSwaglabsLogin.Login_TestCase@6aaceffd</td></tr>
+<tr>
+<td title='ecomSwaglabsLogin.Login_TestCase.loginRegressionTest()'><b>loginRegressionTest</b><br>Test class: ecomSwaglabsLogin.Login_TestCase<br>Parameters: visual_user, secret_sauce</td>
+<td></td>
+<td>2</td>
+<td>ecomSwaglabsLogin.Login_TestCase@6aaceffd</td></tr>
+<tr>
+<td title='ecomSwaglabsLogin.Login_TestCase.loginBoundaryTest()'><b>loginBoundaryTest</b><br>Test class: ecomSwaglabsLogin.Login_TestCase<br>Parameters: standard_user, aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</td>
+<td></td>
+<td>5</td>
+<td>ecomSwaglabsLogin.Login_TestCase@6aaceffd</td></tr>
+<tr>
+<td title='ecomSwaglabsproducts.Product_TestCase.verifyProductVisibilityAfterSorting()'><b>verifyProductVisibilityAfterSorting</b><br>Test class: ecomSwaglabsproducts.Product_TestCase<br/>
+<a href="#Output-150437496" onClick='toggleBox("Output-150437496", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-150437496" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-150437496">
+All sorting options verified successfully<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>ecomSwaglabsproducts.Product_TestCase@c86b9e3</td></tr>
+<tr>
+<td title='ecomSwaglabsproducts.Product_TestCase.productPageSmokeTest()'><b>productPageSmokeTest</b><br>Test class: ecomSwaglabsproducts.Product_TestCase<br>Parameters: Sauce Labs Backpack<br/>
+<a href="#Output-534253640" onClick='toggleBox("Output-534253640", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-534253640" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-534253640">
+Product Page smoke test passed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecomSwaglabsproducts.Product_TestCase@c86b9e3</td></tr>
+<tr>
+<td title='ecomSwaglabsCheckout.Checkout_TestCase.verifyCheckoutOverview()'><b>verifyCheckoutOverview</b><br>Test class: ecomSwaglabsCheckout.Checkout_TestCase<br>Parameters: Mickey, Mouse, 560001</td>
+<td></td>
+<td>2</td>
+<td>ecomSwaglabsCheckout.Checkout_TestCase@3af9c5b7</td></tr>
+<tr>
+<td title='ecomSwaglabsproducts.Product_TestCase.verifyAddToCartAndCartLogo()'><b>verifyAddToCartAndCartLogo</b><br>Test class: ecomSwaglabsproducts.Product_TestCase<br>Parameters: Sauce Labs Bike Light<br/>
+<a href="#Output-636548193" onClick='toggleBox("Output-636548193", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-636548193" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-636548193">
+Product added successfully: Sauce Labs Bike Light<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecomSwaglabsproducts.Product_TestCase@c86b9e3</td></tr>
+<tr>
+<td title='ecomSwaglabsCheckout.Checkout_TestCase.verifyBlankLastName()'><b>verifyBlankLastName</b><br>Test class: ecomSwaglabsCheckout.Checkout_TestCase<br>Parameters: Tom, , 560001</td>
+<td></td>
+<td>0</td>
+<td>ecomSwaglabsCheckout.Checkout_TestCase@3af9c5b7</td></tr>
+<tr>
+<td title='ecomSwaglabsCheckout.Checkout_TestCase.checkoutRegressionFlow()'><b>checkoutRegressionFlow</b><br>Test class: ecomSwaglabsCheckout.Checkout_TestCase<br>Parameters: Bugs, Bunny, 560005</td>
+<td></td>
+<td>2</td>
+<td>ecomSwaglabsCheckout.Checkout_TestCase@3af9c5b7</td></tr>
+<tr>
+<td title='ecomSwaglabsCheckout.Checkout_TestCase.verifyCheckoutBoundaryValues()'><b>verifyCheckoutBoundaryValues</b><br>Test class: ecomSwaglabsCheckout.Checkout_TestCase<br>Parameters: Tom, Mouseeeeeeeeeeeeeeeeeeeee, 560001</td>
+<td></td>
+<td>0</td>
+<td>ecomSwaglabsCheckout.Checkout_TestCase@3af9c5b7</td></tr>
+<tr>
+<td title='ecomSwaglabsHamburgerMenu.Hamberger_TestCase.resetAppStateSmokeTest()'><b>resetAppStateSmokeTest</b><br>Test class: ecomSwaglabsHamburgerMenu.Hamberger_TestCase</td>
+<td></td>
+<td>3</td>
+<td>ecomSwaglabsHamburgerMenu.Hamberger_TestCase@37271612</td></tr>
+<tr>
+<td title='ecomSwaglabsHamburgerMenu.Hamberger_TestCase.verifyHamburgerMenuOptionsDisplayed()'><b>verifyHamburgerMenuOptionsDisplayed</b><br>Test class: ecomSwaglabsHamburgerMenu.Hamberger_TestCase</td>
+<td></td>
+<td>0</td>
+<td>ecomSwaglabsHamburgerMenu.Hamberger_TestCase@37271612</td></tr>
+<tr>
+<td title='ecomSwaglabsLogin.Login_TestCase.loginSmokeTest()'><b>loginSmokeTest</b><br>Test class: ecomSwaglabsLogin.Login_TestCase<br>Parameters: error_user, secret_sauce</td>
+<td></td>
+<td>2</td>
+<td>ecomSwaglabsLogin.Login_TestCase@6aaceffd</td></tr>
+<tr>
+<td title='ecomSwaglabsproducts.Product_TestCase.verifyAddToCartAfterProductRemoval()'><b>verifyAddToCartAfterProductRemoval</b><br>Test class: ecomSwaglabsproducts.Product_TestCase<br>Parameters: Sauce Labs Bike Light<br/>
+<a href="#Output-1655844522" onClick='toggleBox("Output-1655844522", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1655844522" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1655844522">
+Product successfully added again after removal<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>ecomSwaglabsproducts.Product_TestCase@c86b9e3</td></tr>
+<tr>
+<td title='ecomSwaglabsLogin.Login_TestCase.loginBoundaryTest()'><b>loginBoundaryTest</b><br>Test class: ecomSwaglabsLogin.Login_TestCase<br>Parameters: standard_user, a</td>
+<td></td>
+<td>5</td>
+<td>ecomSwaglabsLogin.Login_TestCase@6aaceffd</td></tr>
+<tr>
+<td title='ecomSwaglabsproducts.Product_TestCase.verifyAddToCartAfterChangingFilter()'><b>verifyAddToCartAfterChangingFilter</b><br>Test class: ecomSwaglabsproducts.Product_TestCase<br>Parameters: Sauce Labs Backpack<br/>
+<a href="#Output-875541429" onClick='toggleBox("Output-875541429", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-875541429" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-875541429">
+Product added successfully after changing filter<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecomSwaglabsproducts.Product_TestCase@c86b9e3</td></tr>
+<tr>
+<td title='ecomSwaglabsCheckout.Checkout_TestCase.verifyBlankFirstName()'><b>verifyBlankFirstName</b><br>Test class: ecomSwaglabsCheckout.Checkout_TestCase<br>Parameters: , Duck, 560001</td>
+<td></td>
+<td>0</td>
+<td>ecomSwaglabsCheckout.Checkout_TestCase@3af9c5b7</td></tr>
+<tr>
+<td title='ecomSwaglabsCheckout.Checkout_TestCase.verifyCheckoutBoundaryValues()'><b>verifyCheckoutBoundaryValues</b><br>Test class: ecomSwaglabsCheckout.Checkout_TestCase<br>Parameters: Mickeyyyyyyyyyyyyyyyyyyyyy, Mouse, 560001</td>
+<td></td>
+<td>0</td>
+<td>ecomSwaglabsCheckout.Checkout_TestCase@3af9c5b7</td></tr>
+<tr>
+<td title='ecomSwaglabsproducts.Product_TestCase.verifyCartLogoBoundaryState()'><b>verifyCartLogoBoundaryState</b><br>Test class: ecomSwaglabsproducts.Product_TestCase<br>Parameters: Sauce Labs Bike Light<br/>
+<a href="#Output-855877539" onClick='toggleBox("Output-855877539", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-855877539" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-855877539">
+Cart boundary 0 -> 1 -> 0 verified<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>ecomSwaglabsproducts.Product_TestCase@c86b9e3</td></tr>
+<tr>
+<td title='ecomSwaglabsHamburgerMenu.Hamberger_TestCase.verifyResetAppStateWithEmptyCart()'><b>verifyResetAppStateWithEmptyCart</b><br>Test class: ecomSwaglabsHamburgerMenu.Hamberger_TestCase</td>
+<td></td>
+<td>3</td>
+<td>ecomSwaglabsHamburgerMenu.Hamberger_TestCase@37271612</td></tr>
+<tr>
+<td title='ecomSwaglabsLogin.Login_TestCase.invalidLoginTest()'><b>invalidLoginTest</b><br>Test class: ecomSwaglabsLogin.Login_TestCase<br>Parameters: wrong_user, secret_sauce</td>
+<td></td>
+<td>2</td>
+<td>ecomSwaglabsLogin.Login_TestCase@6aaceffd</td></tr>
+<tr>
+<td title='ecomSwaglabsCart.Cart_TestCase.verifyRemoveAfterReturningToCart()'><b>verifyRemoveAfterReturningToCart</b><br>Test class: ecomSwaglabsCart.Cart_TestCase<br/>
+<a href="#Output-869107435" onClick='toggleBox("Output-869107435", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-869107435" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-869107435">
+TC-CART-09 Passed<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>ecomSwaglabsCart.Cart_TestCase@10aa41f2</td></tr>
+<tr>
+<td title='ecomSwaglabsLogin.Login_TestCase.loginBoundaryTest()'><b>loginBoundaryTest</b><br>Test class: ecomSwaglabsLogin.Login_TestCase<br>Parameters: a, secret_sauce</td>
+<td></td>
+<td>5</td>
+<td>ecomSwaglabsLogin.Login_TestCase@6aaceffd</td></tr>
+<tr>
+<td title='ecomSwaglabsCheckout.Checkout_TestCase.verifyCheckoutInformationToOverview()'><b>verifyCheckoutInformationToOverview</b><br>Test class: ecomSwaglabsCheckout.Checkout_TestCase<br>Parameters: Mickey, Mouse, 560001</td>
+<td></td>
+<td>2</td>
+<td>ecomSwaglabsCheckout.Checkout_TestCase@3af9c5b7</td></tr>
+<tr>
+<td title='ecomSwaglabsLogin.Login_TestCase.invalidLoginTest()'><b>invalidLoginTest</b><br>Test class: ecomSwaglabsLogin.Login_TestCase<br>Parameters: wrong_user, wrong_password</td>
+<td></td>
+<td>2</td>
+<td>ecomSwaglabsLogin.Login_TestCase@6aaceffd</td></tr>
+<tr>
+<td title='ecomSwaglabsproducts.Product_TestCase.verifyAddToCartAndCartLogo()'><b>verifyAddToCartAndCartLogo</b><br>Test class: ecomSwaglabsproducts.Product_TestCase<br>Parameters: Test.allTheThings() T-Shirt (Red)<br/>
+<a href="#Output-1808935033" onClick='toggleBox("Output-1808935033", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1808935033" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1808935033">
+Product added successfully: Test.allTheThings() T-Shirt (Red)<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecomSwaglabsproducts.Product_TestCase@c86b9e3</td></tr>
+<tr>
+<td title='ecomSwaglabsCheckout.Checkout_TestCase.verifyOverviewToComplete()'><b>verifyOverviewToComplete</b><br>Test class: ecomSwaglabsCheckout.Checkout_TestCase<br>Parameters: Mickey, Mouse, 560001</td>
+<td></td>
+<td>2</td>
+<td>ecomSwaglabsCheckout.Checkout_TestCase@3af9c5b7</td></tr>
+<tr>
+<td title='ecomSwaglabsproducts.Product_TestCase.verifyAddToCartAndCartLogo()'><b>verifyAddToCartAndCartLogo</b><br>Test class: ecomSwaglabsproducts.Product_TestCase<br>Parameters: Sauce Labs Backpack<br/>
+<a href="#Output-691803666" onClick='toggleBox("Output-691803666", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-691803666" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-691803666">
+Product added successfully: Sauce Labs Backpack<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecomSwaglabsproducts.Product_TestCase@c86b9e3</td></tr>
+<tr>
+<td title='ecomSwaglabsCart.Cart_TestCase.verifyCartContentsAfterReturning()'><b>verifyCartContentsAfterReturning</b><br>Test class: ecomSwaglabsCart.Cart_TestCase<br/>
+<a href="#Output-766023430" onClick='toggleBox("Output-766023430", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-766023430" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-766023430">
+TC-CART-08 Passed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecomSwaglabsCart.Cart_TestCase@10aa41f2</td></tr>
+<tr>
+<td title='ecomSwaglabsHamburgerMenu.Hamberger_TestCase.completeHamburgerMenuWorkflow()'><b>completeHamburgerMenuWorkflow</b><br>Test class: ecomSwaglabsHamburgerMenu.Hamberger_TestCase</td>
+<td></td>
+<td>5</td>
+<td>ecomSwaglabsHamburgerMenu.Hamberger_TestCase@37271612</td></tr>
+<tr>
+<td title='ecomSwaglabsLogin.Login_TestCase.blankLoginTest()'><b>blankLoginTest</b><br>Test class: ecomSwaglabsLogin.Login_TestCase<br>Parameters: standard_user, </td>
+<td></td>
+<td>2</td>
+<td>ecomSwaglabsLogin.Login_TestCase@6aaceffd</td></tr>
+<tr>
+<td title='ecomSwaglabsLogin.Login_TestCase.validLoginTest()'><b>validLoginTest</b><br>Test class: ecomSwaglabsLogin.Login_TestCase<br>Parameters: problem_user, secret_sauce</td>
+<td></td>
+<td>2</td>
+<td>ecomSwaglabsLogin.Login_TestCase@6aaceffd</td></tr>
+<tr>
+<td title='ecomSwaglabsCheckout.Checkout_TestCase.completeSystemPurchaseFlow()'><b>completeSystemPurchaseFlow</b><br>Test class: ecomSwaglabsCheckout.Checkout_TestCase<br>Parameters: Bugs, Bunny, 560005</td>
+<td></td>
+<td>2</td>
+<td>ecomSwaglabsCheckout.Checkout_TestCase@3af9c5b7</td></tr>
+<tr>
+<td title='ecomSwaglabsLogin.Login_TestCase.loginSmokeTest()'><b>loginSmokeTest</b><br>Test class: ecomSwaglabsLogin.Login_TestCase<br>Parameters: performance_glitch_user, secret_sauce</td>
+<td></td>
+<td>7</td>
+<td>ecomSwaglabsLogin.Login_TestCase@6aaceffd</td></tr>
+<tr>
+<td title='ecomSwaglabsproducts.Product_TestCase.verifyProductsAreVisible()'><b>verifyProductsAreVisible</b><br>Test class: ecomSwaglabsproducts.Product_TestCase<br/>
+<a href="#Output-37721095" onClick='toggleBox("Output-37721095", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-37721095" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-37721095">
+Products, names and prices are displayed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecomSwaglabsproducts.Product_TestCase@c86b9e3</td></tr>
+<tr>
+<td title='ecomSwaglabsLogin.Login_TestCase.verifyLoginControlsDisplayed()'><b>verifyLoginControlsDisplayed</b><br>Test class: ecomSwaglabsLogin.Login_TestCase</td>
+<td></td>
+<td>0</td>
+<td>ecomSwaglabsLogin.Login_TestCase@6aaceffd</td></tr>
+<tr>
+<td title='ecomSwaglabsLogin.Login_TestCase.loginSmokeTest()'><b>loginSmokeTest</b><br>Test class: ecomSwaglabsLogin.Login_TestCase<br>Parameters: visual_user, secret_sauce</td>
+<td></td>
+<td>2</td>
+<td>ecomSwaglabsLogin.Login_TestCase@6aaceffd</td></tr>
+<tr>
+<td title='ecomSwaglabsproducts.Product_TestCase.verifyAddToCartAfterProductRemoval()'><b>verifyAddToCartAfterProductRemoval</b><br>Test class: ecomSwaglabsproducts.Product_TestCase<br>Parameters: Test.allTheThings() T-Shirt (Red)<br/>
+<a href="#Output-437597103" onClick='toggleBox("Output-437597103", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-437597103" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-437597103">
+Product successfully added again after removal<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>ecomSwaglabsproducts.Product_TestCase@c86b9e3</td></tr>
+<tr>
+<td title='ecomSwaglabsCart.Cart_TestCase.verifyAddedProductVisibleInCart()'><b>verifyAddedProductVisibleInCart</b><br>Test class: ecomSwaglabsCart.Cart_TestCase<br/>
+<a href="#Output-1416503509" onClick='toggleBox("Output-1416503509", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1416503509" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1416503509">
+TC-CART-01 Passed - Product is visible in Cart<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecomSwaglabsCart.Cart_TestCase@10aa41f2</td></tr>
+<tr>
+<td title='ecomSwaglabsCheckout.Checkout_TestCase.verifyCheckoutCompleteAndBackHome()'><b>verifyCheckoutCompleteAndBackHome</b><br>Test class: ecomSwaglabsCheckout.Checkout_TestCase<br>Parameters: Bugs, Bunny, 560005</td>
+<td></td>
+<td>3</td>
+<td>ecomSwaglabsCheckout.Checkout_TestCase@3af9c5b7</td></tr>
+<tr>
+<td title='ecomSwaglabsCheckout.Checkout_TestCase.verifyValidCheckoutInformation()'><b>verifyValidCheckoutInformation</b><br>Test class: ecomSwaglabsCheckout.Checkout_TestCase<br>Parameters: Mickey, Mouse, 560001</td>
+<td></td>
+<td>2</td>
+<td>ecomSwaglabsCheckout.Checkout_TestCase@3af9c5b7</td></tr>
+<tr>
+<td title='ecomSwaglabsproducts.Product_TestCase.verifyProductPageToCartPage()'><b>verifyProductPageToCartPage</b><br>Test class: ecomSwaglabsproducts.Product_TestCase<br>Parameters: Sauce Labs Backpack<br/>
+<a href="#Output-2023401435" onClick='toggleBox("Output-2023401435", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2023401435" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2023401435">
+Product successfully navigated to Cart: Sauce Labs Backpack<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecomSwaglabsproducts.Product_TestCase@c86b9e3</td></tr>
+<tr>
+<td title='ecomSwaglabsproducts.Product_TestCase.verifyCartLogoBoundaryState()'><b>verifyCartLogoBoundaryState</b><br>Test class: ecomSwaglabsproducts.Product_TestCase<br>Parameters: Test.allTheThings() T-Shirt (Red)<br/>
+<a href="#Output-2026864909" onClick='toggleBox("Output-2026864909", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2026864909" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2026864909">
+Cart boundary 0 -> 1 -> 0 verified<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>ecomSwaglabsproducts.Product_TestCase@c86b9e3</td></tr>
+<tr>
+<td title='ecomSwaglabsLogin.Login_TestCase.loginBoundaryTest()'><b>loginBoundaryTest</b><br>Test class: ecomSwaglabsLogin.Login_TestCase<br>Parameters: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa, secret_sauce</td>
+<td></td>
+<td>5</td>
+<td>ecomSwaglabsLogin.Login_TestCase@6aaceffd</td></tr>
+<tr>
+<td title='ecomSwaglabsLogin.Login_TestCase.loginRegressionTest()'><b>loginRegressionTest</b><br>Test class: ecomSwaglabsLogin.Login_TestCase<br>Parameters: problem_user, secret_sauce</td>
+<td></td>
+<td>2</td>
+<td>ecomSwaglabsLogin.Login_TestCase@6aaceffd</td></tr>
+<tr>
+<td title='ecomSwaglabsproducts.Product_TestCase.verifyFilterDropdownSmokeTest()'><b>verifyFilterDropdownSmokeTest</b><br>Test class: ecomSwaglabsproducts.Product_TestCase<br/>
+<a href="#Output-1975034750" onClick='toggleBox("Output-1975034750", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1975034750" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1975034750">
+Filter dropdown smoke test passed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecomSwaglabsproducts.Product_TestCase@c86b9e3</td></tr>
+<tr>
+<td title='ecomSwaglabsCheckout.Checkout_TestCase.checkoutRegressionFlow()'><b>checkoutRegressionFlow</b><br>Test class: ecomSwaglabsCheckout.Checkout_TestCase<br>Parameters: Mickey, Mouse, 560001</td>
+<td></td>
+<td>2</td>
+<td>ecomSwaglabsCheckout.Checkout_TestCase@3af9c5b7</td></tr>
+<tr>
+<td title='ecomSwaglabsCart.Cart_TestCase.verifyRemovedProductNotPresent()'><b>verifyRemovedProductNotPresent</b><br>Test class: ecomSwaglabsCart.Cart_TestCase<br/>
+<a href="#Output-1548048652" onClick='toggleBox("Output-1548048652", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1548048652" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1548048652">
+TC-CART-05 Passed<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>ecomSwaglabsCart.Cart_TestCase@10aa41f2</td></tr>
+<tr>
+<td title='ecomSwaglabsCheckout.Checkout_TestCase.verifyOverviewToComplete()'><b>verifyOverviewToComplete</b><br>Test class: ecomSwaglabsCheckout.Checkout_TestCase<br>Parameters: Bugs, Bunny, 560005</td>
+<td></td>
+<td>2</td>
+<td>ecomSwaglabsCheckout.Checkout_TestCase@3af9c5b7</td></tr>
+<tr>
+<td title='ecomSwaglabsLogin.Login_TestCase.verifyLoginNavigatesToProductPage()'><b>verifyLoginNavigatesToProductPage</b><br>Test class: ecomSwaglabsLogin.Login_TestCase<br>Parameters: error_user, secret_sauce</td>
+<td></td>
+<td>2</td>
+<td>ecomSwaglabsLogin.Login_TestCase@6aaceffd</td></tr>
+<tr>
+<td title='ecomSwaglabsCheckout.Checkout_TestCase.verifyCheckoutInformationToOverview()'><b>verifyCheckoutInformationToOverview</b><br>Test class: ecomSwaglabsCheckout.Checkout_TestCase<br>Parameters: Bugs, Bunny, 560005</td>
+<td></td>
+<td>2</td>
+<td>ecomSwaglabsCheckout.Checkout_TestCase@3af9c5b7</td></tr>
+<tr>
+<td title='ecomSwaglabsproducts.Product_TestCase.verifyAddToCartAfterProductRemoval()'><b>verifyAddToCartAfterProductRemoval</b><br>Test class: ecomSwaglabsproducts.Product_TestCase<br>Parameters: Sauce Labs Backpack<br/>
+<a href="#Output-639477839" onClick='toggleBox("Output-639477839", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-639477839" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-639477839">
+Product successfully added again after removal<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>ecomSwaglabsproducts.Product_TestCase@c86b9e3</td></tr>
+<tr>
+<td title='ecomSwaglabsproducts.Product_TestCase.verifyEmptyCartNavigation()'><b>verifyEmptyCartNavigation</b><br>Test class: ecomSwaglabsproducts.Product_TestCase<br/>
+<a href="#Output-222924699" onClick='toggleBox("Output-222924699", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-222924699" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-222924699">
+Empty cart handled successfully<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>ecomSwaglabsproducts.Product_TestCase@c86b9e3</td></tr>
+<tr>
+<td title='ecomSwaglabsLogin.Login_TestCase.validLoginTest()'><b>validLoginTest</b><br>Test class: ecomSwaglabsLogin.Login_TestCase<br>Parameters: visual_user, secret_sauce</td>
+<td></td>
+<td>2</td>
+<td>ecomSwaglabsLogin.Login_TestCase@6aaceffd</td></tr>
+<tr>
+<td title='ecomSwaglabsLogin.Login_TestCase.loginSmokeTest()'><b>loginSmokeTest</b><br>Test class: ecomSwaglabsLogin.Login_TestCase<br>Parameters: problem_user, secret_sauce</td>
+<td></td>
+<td>2</td>
+<td>ecomSwaglabsLogin.Login_TestCase@6aaceffd</td></tr>
+<tr>
+<td title='ecomSwaglabsproducts.Product_TestCase.productPageSmokeTest()'><b>productPageSmokeTest</b><br>Test class: ecomSwaglabsproducts.Product_TestCase<br>Parameters: Test.allTheThings() T-Shirt (Red)<br/>
+<a href="#Output-2005105367" onClick='toggleBox("Output-2005105367", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2005105367" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2005105367">
+Product Page smoke test passed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecomSwaglabsproducts.Product_TestCase@c86b9e3</td></tr>
+<tr>
+<td title='ecomSwaglabsCheckout.Checkout_TestCase.verifyCheckoutCompleteAndBackHome()'><b>verifyCheckoutCompleteAndBackHome</b><br>Test class: ecomSwaglabsCheckout.Checkout_TestCase<br>Parameters: Mickey, Mouse, 560001</td>
+<td></td>
+<td>3</td>
+<td>ecomSwaglabsCheckout.Checkout_TestCase@3af9c5b7</td></tr>
+<tr>
+<td title='ecomSwaglabsCart.Cart_TestCase.cartSmokeTest()'><b>cartSmokeTest</b><br>Test class: ecomSwaglabsCart.Cart_TestCase<br/>
+<a href="#Output-1768764597" onClick='toggleBox("Output-1768764597", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1768764597" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1768764597">
+TC-CART-06 Passed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecomSwaglabsCart.Cart_TestCase@10aa41f2</td></tr>
+<tr>
+<td title='ecomSwaglabsHamburgerMenu.Hamberger_TestCase.hamburgerMenuSmokeTest()'><b>hamburgerMenuSmokeTest</b><br>Test class: ecomSwaglabsHamburgerMenu.Hamberger_TestCase</td>
+<td></td>
+<td>0</td>
+<td>ecomSwaglabsHamburgerMenu.Hamberger_TestCase@37271612</td></tr>
+<tr>
+<td title='ecomSwaglabsCart.Cart_TestCase.verifyCartQuantityBoundary()'><b>verifyCartQuantityBoundary</b><br>Test class: ecomSwaglabsCart.Cart_TestCase<br/>
+<a href="#Output-1291899100" onClick='toggleBox("Output-1291899100", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1291899100" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1291899100">
+TC-CART-10 Passed<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>ecomSwaglabsCart.Cart_TestCase@10aa41f2</td></tr>
+<tr>
+<td title='ecomSwaglabsHamburgerMenu.Hamberger_TestCase.verifyResetAfterCartStateTransitions()'><b>verifyResetAfterCartStateTransitions</b><br>Test class: ecomSwaglabsHamburgerMenu.Hamberger_TestCase</td>
+<td></td>
+<td>6</td>
+<td>ecomSwaglabsHamburgerMenu.Hamberger_TestCase@37271612</td></tr>
+<tr>
+<td title='ecomSwaglabsLogin.Login_TestCase.validLoginTest()'><b>validLoginTest</b><br>Test class: ecomSwaglabsLogin.Login_TestCase<br>Parameters: performance_glitch_user, secret_sauce</td>
+<td></td>
+<td>7</td>
+<td>ecomSwaglabsLogin.Login_TestCase@6aaceffd</td></tr>
+<tr>
+<td title='ecomSwaglabsLogin.Login_TestCase.validLoginTest()'><b>validLoginTest</b><br>Test class: ecomSwaglabsLogin.Login_TestCase<br>Parameters: error_user, secret_sauce</td>
+<td></td>
+<td>2</td>
+<td>ecomSwaglabsLogin.Login_TestCase@6aaceffd</td></tr>
+<tr>
+<td title='ecomSwaglabsCheckout.Checkout_TestCase.verifyValidCheckoutInformation()'><b>verifyValidCheckoutInformation</b><br>Test class: ecomSwaglabsCheckout.Checkout_TestCase<br>Parameters: Bugs, Bunny, 560005</td>
+<td></td>
+<td>2</td>
+<td>ecomSwaglabsCheckout.Checkout_TestCase@3af9c5b7</td></tr>
+<tr>
+<td title='ecomSwaglabsLogin.Login_TestCase.verifyLoginNavigatesToProductPage()'><b>verifyLoginNavigatesToProductPage</b><br>Test class: ecomSwaglabsLogin.Login_TestCase<br>Parameters: performance_glitch_user, secret_sauce</td>
+<td></td>
+<td>7</td>
+<td>ecomSwaglabsLogin.Login_TestCase@6aaceffd</td></tr>
+<tr>
+<td title='ecomSwaglabsproducts.Product_TestCase.verifyAddToCartAfterChangingFilter()'><b>verifyAddToCartAfterChangingFilter</b><br>Test class: ecomSwaglabsproducts.Product_TestCase<br>Parameters: Sauce Labs Bike Light<br/>
+<a href="#Output-1056381974" onClick='toggleBox("Output-1056381974", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1056381974" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1056381974">
+Product added successfully after changing filter<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecomSwaglabsproducts.Product_TestCase@c86b9e3</td></tr>
+<tr>
+<td title='ecomSwaglabsCart.Cart_TestCase.verifyCartControls()'><b>verifyCartControls</b><br>Test class: ecomSwaglabsCart.Cart_TestCase<br/>
+<a href="#Output-802339761" onClick='toggleBox("Output-802339761", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-802339761" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-802339761">
+TC-CART-02 Passed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecomSwaglabsCart.Cart_TestCase@10aa41f2</td></tr>
+<tr>
+<td title='ecomSwaglabsHamburgerMenu.Hamberger_TestCase.verifyLogoutAfterProductAndCartNavigation()'><b>verifyLogoutAfterProductAndCartNavigation</b><br>Test class: ecomSwaglabsHamburgerMenu.Hamberger_TestCase</td>
+<td></td>
+<td>0</td>
+<td>ecomSwaglabsHamburgerMenu.Hamberger_TestCase@37271612</td></tr>
+<tr>
+<td title='ecomSwaglabsCart.Cart_TestCase.verifyEmptyCart()'><b>verifyEmptyCart</b><br>Test class: ecomSwaglabsCart.Cart_TestCase<br/>
+<a href="#Output-515604959" onClick='toggleBox("Output-515604959", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-515604959" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-515604959">
+TC-CART-04 Passed - Empty cart verified<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>ecomSwaglabsCart.Cart_TestCase@10aa41f2</td></tr>
+<tr>
+<td title='ecomSwaglabsCheckout.Checkout_TestCase.verifyCheckoutInformationFields()'><b>verifyCheckoutInformationFields</b><br>Test class: ecomSwaglabsCheckout.Checkout_TestCase</td>
+<td></td>
+<td>0</td>
+<td>ecomSwaglabsCheckout.Checkout_TestCase@3af9c5b7</td></tr>
+<tr>
+<td title='ecomSwaglabsproducts.Product_TestCase.verifyCartLogoBoundaryState()'><b>verifyCartLogoBoundaryState</b><br>Test class: ecomSwaglabsproducts.Product_TestCase<br>Parameters: Sauce Labs Backpack<br/>
+<a href="#Output-53073998" onClick='toggleBox("Output-53073998", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-53073998" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-53073998">
+Cart boundary 0 -> 1 -> 0 verified<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>ecomSwaglabsproducts.Product_TestCase@c86b9e3</td></tr>
+<tr>
+<td title='ecomSwaglabsproducts.Product_TestCase.verifyProductPageToCartPage()'><b>verifyProductPageToCartPage</b><br>Test class: ecomSwaglabsproducts.Product_TestCase<br>Parameters: Test.allTheThings() T-Shirt (Red)<br/>
+<a href="#Output-1760681112" onClick='toggleBox("Output-1760681112", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1760681112" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1760681112">
+Product successfully navigated to Cart: Test.allTheThings() T-Shirt (Red)<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecomSwaglabsproducts.Product_TestCase@c86b9e3</td></tr>
+<tr>
+<td title='ecomSwaglabsLogin.Login_TestCase.loginRegressionTest()'><b>loginRegressionTest</b><br>Test class: ecomSwaglabsLogin.Login_TestCase<br>Parameters: error_user, secret_sauce</td>
+<td></td>
+<td>2</td>
+<td>ecomSwaglabsLogin.Login_TestCase@6aaceffd</td></tr>
+<tr>
+<td title='ecomSwaglabsCheckout.Checkout_TestCase.verifyCompleteToHome()'><b>verifyCompleteToHome</b><br>Test class: ecomSwaglabsCheckout.Checkout_TestCase<br>Parameters: Mickey, Mouse, 560001</td>
+<td></td>
+<td>2</td>
+<td>ecomSwaglabsCheckout.Checkout_TestCase@3af9c5b7</td></tr>
+<tr>
+<td title='ecomSwaglabsHamburgerMenu.Hamberger_TestCase.verifyHamburgerNotAccessibleAfterLogout()'><b>verifyHamburgerNotAccessibleAfterLogout</b><br>Test class: ecomSwaglabsHamburgerMenu.Hamberger_TestCase</td>
+<td></td>
+<td>0</td>
+<td>ecomSwaglabsHamburgerMenu.Hamberger_TestCase@37271612</td></tr>
+<tr>
+<td title='ecomSwaglabsproducts.Product_TestCase.verifyAddToCartAfterChangingFilter()'><b>verifyAddToCartAfterChangingFilter</b><br>Test class: ecomSwaglabsproducts.Product_TestCase<br>Parameters: Test.allTheThings() T-Shirt (Red)<br/>
+<a href="#Output-1184252132" onClick='toggleBox("Output-1184252132", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1184252132" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1184252132">
+Product added successfully after changing filter<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecomSwaglabsproducts.Product_TestCase@c86b9e3</td></tr>
+<tr>
+<td title='ecomSwaglabsCart.Cart_TestCase.verifyContinueShopping()'><b>verifyContinueShopping</b><br>Test class: ecomSwaglabsCart.Cart_TestCase<br/>
+<a href="#Output-1698711093" onClick='toggleBox("Output-1698711093", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1698711093" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1698711093">
+TC-CART-07 Passed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecomSwaglabsCart.Cart_TestCase@10aa41f2</td></tr>
+<tr>
+<td title='ecomSwaglabsCheckout.Checkout_TestCase.completeSystemPurchaseFlow()'><b>completeSystemPurchaseFlow</b><br>Test class: ecomSwaglabsCheckout.Checkout_TestCase<br>Parameters: Mickey, Mouse, 560001</td>
+<td></td>
+<td>2</td>
+<td>ecomSwaglabsCheckout.Checkout_TestCase@3af9c5b7</td></tr>
+<tr>
+<td title='ecomSwaglabsLogin.Login_TestCase.blankLoginTest()'><b>blankLoginTest</b><br>Test class: ecomSwaglabsLogin.Login_TestCase<br>Parameters: , secret_sauce</td>
+<td></td>
+<td>2</td>
+<td>ecomSwaglabsLogin.Login_TestCase@6aaceffd</td></tr>
+<tr>
+<td title='ecomSwaglabsproducts.Product_TestCase.verifyProductPageToCartPage()'><b>verifyProductPageToCartPage</b><br>Test class: ecomSwaglabsproducts.Product_TestCase<br>Parameters: Sauce Labs Bike Light<br/>
+<a href="#Output-976341964" onClick='toggleBox("Output-976341964", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-976341964" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-976341964">
+Product successfully navigated to Cart: Sauce Labs Bike Light<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ecomSwaglabsproducts.Product_TestCase@c86b9e3</td></tr>
+<tr>
+<td title='ecomSwaglabsLogin.Login_TestCase.loginRegressionTest()'><b>loginRegressionTest</b><br>Test class: ecomSwaglabsLogin.Login_TestCase<br>Parameters: performance_glitch_user, secret_sauce</td>
+<td></td>
+<td>7</td>
+<td>ecomSwaglabsLogin.Login_TestCase@6aaceffd</td></tr>
+<tr>
+<td title='ecomSwaglabsHamburgerMenu.Hamberger_TestCase.verifyLogoutNavigatesToLoginPage()'><b>verifyLogoutNavigatesToLoginPage</b><br>Test class: ecomSwaglabsHamburgerMenu.Hamberger_TestCase</td>
+<td></td>
+<td>0</td>
+<td>ecomSwaglabsHamburgerMenu.Hamberger_TestCase@37271612</td></tr>
+</table><p>
+</body>
+</html>

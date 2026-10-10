@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Smoke Testing Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Smoke Test(failed)">
+    <groups>
+      <run>
+        <include name="SMT"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="ecomSwaglabsCart.Cart_TestCase">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="dbConnection"/>
+          <include name="verifyContinueShopping"/>
+          <include name="navigateTOApp"/>
+          <include name="bt"/>
+          <include name="cartSmokeTest"/>
+        </methods>
+      </class> <!-- ecomSwaglabsCart.Cart_TestCase -->
+      <class name="ecomSwaglabsproducts.Product_TestCase">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="verifyFilterDropdownSmokeTest"/>
+          <include name="dbConnection"/>
+          <include name="navigateTOApp"/>
+          <include name="productPageSmokeTest"/>
+          <include name="bt"/>
+        </methods>
+      </class> <!-- ecomSwaglabsproducts.Product_TestCase -->
+      <class name="ecomSwaglabsHamburgerMenu.Hamberger_TestCase">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="dbConnection"/>
+          <include name="navigateTOApp"/>
+          <include name="resetAppStateSmokeTest"/>
+          <include name="hamburgerMenuSmokeTest"/>
+          <include name="bt"/>
+        </methods>
+      </class> <!-- ecomSwaglabsHamburgerMenu.Hamberger_TestCase -->
+      <class name="ecomSwaglabsLogin.Login_TestCase">
+        <methods>
+          <include name="loginSmokeTest"/>
+          <include name="closeBrowser"/>
+          <include name="launchApplication"/>
+        </methods>
+      </class> <!-- ecomSwaglabsLogin.Login_TestCase -->
+    </classes>
+  </test> <!-- Smoke Test(failed) -->
+</suite> <!-- Failed suite [Smoke Testing Suite] -->
